@@ -1,0 +1,13 @@
+An abstract class in Java is a class that cannot be instantiated on its own. It serves as a blueprint
+ for other classes. It can have both abstract methods (methods that are declared without implementation)
+ and concrete methods (methods with a complete implementation). The main purpose of an abstract class is
+ to provide a common base for other classes, which can then extend it and provide specific implementations
+  for the abstract methods.
+
+  an abstract class cannot be instantiated
+  abstract methods are declared but not defined-they dont have a body
+
+  Concrete Methods: An abstract class can also have methods with full implementation,
+   just like a regular class. Subclasses can either use these methods or override them.
+
+   A subclass that extends an abstract class must implement all of its abstract methods unless the subclass is also abstract
