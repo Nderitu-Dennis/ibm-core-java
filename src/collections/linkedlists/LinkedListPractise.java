@@ -1,5 +1,5 @@
 
-package linked_list;
+package collections.linkedlists;
 
 //using a (to_do) to learn about linked lists
 

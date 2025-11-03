@@ -1,4 +1,4 @@
-package wrapper_classes;
+package collections.arraylists;
 
 import java.util.ArrayList;
 
