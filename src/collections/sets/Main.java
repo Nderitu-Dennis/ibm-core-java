@@ -2,23 +2,21 @@ package collections.sets;
 
 /*
 * Set is an interface within the Java Collections Framework (part of the java.util package)
-* that represents an unordered collection of unique elements. This means a Set cannot contain duplicate values.
+ that represents an unordered collection of unique elements. This means a Set cannot contain duplicate values.
 * If an attempt is made to add a duplicate element, the Set will ignore it, and its content will remain
-* unchanged.
-*
-* Key characteristics of Java Sets:
+ unchanged.
+
+* Key characteristics of Java Sets:**
+
 1. Uniqueness: They store only unique elements.
-
 2. Unordered (generally): Set implementations typically do not guarantee any specific order of elements,
-*  though some implementations like LinkedHashSet preserve insertion order and TreeSet orders elements
-*  based on their natural ordering or a custom Comparator.
-
+  though some implementations like LinkedHashSet preserve insertion order and TreeSet orders elements
+ based on their natural ordering or a custom Comparator.
 3. No Index-based Access: Elements cannot be accessed by an index, unlike List implementations.
-
 4. Mathematical Set Abstraction: They model the mathematical concept of a set, allowing for operations
-* like union, intersection, and difference.
-*
-Common Implementations of the Set Interface:
+like union, intersection, and difference.
+
+**Common Implementations of the Set Interface:**
 - HashSet: The most common and generally best-performing implementation. It stores elements in a
  hash table and offers fast operations, but it does not guarantee any order of elements.
 - LinkedHashSet: This implementation maintains the insertion order of elements. It uses a hash table
@@ -40,28 +38,22 @@ public class Main {
         uniqueNames.add("Munga");
         uniqueNames.add("Javan");
 
-        for(String names : uniqueNames)
+        for (String names : uniqueNames) //Alice will be printed only once
             System.out.println(names);
 
         System.out.println("\nHash code for the entire set: " + uniqueNames.hashCode());
 
         System.out.println("\n hash code for each value:");
-        for(String names : uniqueNames)
+        for (String names : uniqueNames)
             System.out.println(names + ": " + names.hashCode());
 
 
         // remove()
         uniqueNames.remove("Alice");
-        System.out.println("\nafter removing \"Alice\" \n");
+        System.out.println("\nAfter removing \"Alice:\" \n");
 
-        for(String names : uniqueNames)
+        for (String names : uniqueNames)
             System.out.println(names);
-
-
-
-
-
-
 
 
     }

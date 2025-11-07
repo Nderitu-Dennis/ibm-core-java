@@ -31,7 +31,7 @@ public class Main {
 
         fruits.remove(); //will remove first element-apple
 
-        for(String f : fruits){
+        for (String f : fruits) {
             System.out.println(f);
         }
 
@@ -41,15 +41,22 @@ public class Main {
         nums.add(4);
         nums.add(3);
 
-        //nums.poll();
+        nums.poll();
 //poll->Retrieves and removes the head
-        System.out.println("**poll()**\nPriority queue: " + nums);
-       // System.out.println("polled: " + nums.poll());
-        System.out.println("Priority queue: " + nums);
+        System.out.println("\n**poll()**\nPriority queue: " + nums);
+        System.out.println("polled: " + nums.poll());
+        System.out.println("Priority queue after polling: " + nums);
 
         // remove->Retrieves and removes the head
-        System.out.println("**remove**\nremoved: "+ nums.remove());
-        System.out.println(nums);
+        System.out.println("\n**remove**\nremoved: " + nums.remove());
+        System.out.println("Priority queue after removing: " + nums);
+
+        /*
+    * diff btwn poll() & remove()
+    * poll() → returns null if the queue is empty (safe).
+    remove() → throws a NoSuchElementException if the queue is empty (unsafe unless you’re sure it has elements).
+    That’s the only real difference — both otherwise do the same thing: retrieve and remove the head element.
+    * */
 
         //peek()->Retrieves but does not remove the head
 
@@ -59,10 +66,8 @@ public class Main {
         marks.add(25);
         marks.add(30);
 
-        System.out.println("**peek()**\npeeked: "+ marks.peek());
-        System.out.println(marks);
-
-
+        System.out.println("\n**peek()**\npeeked: " + marks.peek());
+        System.out.println("after peek() " + marks);
 
 
     }
