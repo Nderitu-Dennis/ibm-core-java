@@ -1,7 +1,0 @@
-the main diff btwn array and arraylist is that it can grow/shrink and doesnt bring indexoutofbounds exception
-        * In Java, **size** refers to the number of elements currently stored in an `ArrayList`, while **capacity** is the
-        *  total number of elements the `ArrayList` can hold before needing to resize. The **size** increases as elements are added,
-        *  but the **capacity** grows automatically when needed (usually doubling when the list is full).*/
-
-If the capacity is not declared in `ArrayList<>();`, it defaults to an initial capacity of **10**. As elements are added beyond this,
-the capacity automatically increases (typically doubling) to accommodate more elements.

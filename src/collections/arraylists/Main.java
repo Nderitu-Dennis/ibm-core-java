@@ -3,7 +3,7 @@ package collections.arraylists;
 import java.util.ArrayList;
 
 /*
-* wrapper classes provide a way to treat primitive data as objects which is necessary
+* wrapper classes such as Integer provide a way to treat primitive data as objects which is necessary
 * for certain Java features such as using them with collections such as ArrayList and Hashmaps
  */
 public class Main {

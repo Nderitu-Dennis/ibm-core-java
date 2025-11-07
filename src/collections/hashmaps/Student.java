@@ -42,7 +42,7 @@ public class Student {
 //        Given a student’s name, print their mark.
         System.out.println("\nmarks for Greyson: " + studentMarks.get("Greyson marcus"));
 
-       //adding an element
+        //adding an element
         studentMarks.put("Nicodemus", 90);
 
 //        Find and print the student with the highest mark.
